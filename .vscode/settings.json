@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/f7f3ce2a-2d23-4913-9aa2-fbdca123482f/appservices/subscriptions/f7f3ce2a-2d23-4913-9aa2-fbdca123482f/resourceGroups/appsvc_linux_centralus_basic/providers/Microsoft.Web/sites/banco-python-webapp",
+    "appService.deploySubpath": "."
+}
