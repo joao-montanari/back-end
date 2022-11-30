@@ -10,7 +10,7 @@ from rest_framework import viewsets
 from rest_framework.generics import ListCreateAPIView, RetrieveUpdateDestroyAPIView
 
 from home.serializer import *
-
+from rest_framework import permissions
 from .models import *
 # Create your views here.
 
@@ -19,8 +19,9 @@ class ClienteViewSet(viewsets.ModelViewSet):
     serializer_class = ClienteSerializer
 
 class ClienteInViewSet(viewsets.ModelViewSet):
-	queryset = Cliente.objects.all()
-	serializer_class = ClienteInSerializer
+    queryset = Cliente.objects.all()
+    serializer_class = ClienteInSerializer
+    permission_classes = [permissions.AllowAny] #permissao de usuario
 
 class UsuarioViewSet(viewsets.ModelViewSet):
     queryset = Usuario.objects.all()
