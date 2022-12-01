@@ -26,7 +26,7 @@ class Cliente(models.Model):
         default = INDEFINIDO,
     )
     # foto = models.ImageField(upload_to = 'clientes/imagens')
-    foto = PictureField(upload_to = 'clientes/imagens')
+    # foto = PictureField(upload_to = 'clientes/imagens')
     user = models.OneToOneField(
         settings.AUTH_USER_MODEL,
         on_delete = models.CASCADE

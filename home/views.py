@@ -22,6 +22,9 @@ class ClienteInViewSet(viewsets.ModelViewSet):
     queryset = Cliente.objects.all()
     serializer_class = ClienteInSerializer
     permission_classes = [permissions.AllowAny] #permissao de usuario
+    
+    # def list(self, request, *args, **kwargs):
+    #     return Response(status=status.HTTP_401_UNAUTHORIZED)
 
 class UsuarioViewSet(viewsets.ModelViewSet):
     queryset = Usuario.objects.all()

@@ -4,13 +4,13 @@ from .models import *
 class ClienteSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cliente
-        fields = ['id', 'nome_completo', 'data_nacimento', 'empregado', 'sexo', 'foto']
-    foto = PictureField()
+        fields = ['id', 'nome_completo', 'data_nacimento', 'empregado', 'sexo']
+    #foto = PictureField()
 
 class ClienteInSerializer(serializers.ModelSerializer):
     class Meta:
         model = Cliente
-        fields = ['id', 'nome_completo', 'data_nacimento', 'empregado', 'sexo', 'foto']
+        fields = ['id', 'nome_completo', 'data_nacimento', 'empregado', 'sexo', 'user']
 
 class UsuarioSerializer(serializers.ModelSerializer):
     class Meta:

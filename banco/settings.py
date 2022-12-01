@@ -48,7 +48,8 @@ INSTALLED_APPS = [
     'pictures',
     'core',
     'whitenoise',
-    'djoser'
+    'djoser',
+    "corsheaders",
 ]
 
 MIDDLEWARE = [
@@ -60,6 +61,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     "whitenoise.middleware.WhiteNoiseMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = 'banco.urls'
@@ -82,6 +84,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'banco.wsgi.application'
 
+CORS_ALLOWED_ORIGINS = [
+    "http://localhost:3000",
+]
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
