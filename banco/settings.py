@@ -86,6 +86,7 @@ WSGI_APPLICATION = 'banco.wsgi.application'
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
+    "https://boobank.vercel.app"
 ]
 
 # Database
