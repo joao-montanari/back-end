@@ -10,7 +10,7 @@ O projeto se trata da construção de um banco funcional utilizando de framework
 - Cadastro;
 - Gerar conta;
 - Gerar Cartão;
-- etc...
+- Etc...
 
 Para o desenvolvimento do projeto foi necessário integrar diferentes conhecimentos, referentes a materias de back-end, front-end e banco de dados. Juntas elas se encontram afim de criar este projeto integrador.
 
